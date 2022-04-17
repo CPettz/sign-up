@@ -15,7 +15,7 @@ body {
     padding: 0px;
 }
 
-.container {
+.body {
     display: flex;
 }
 
@@ -99,15 +99,52 @@ a:hover {
     font-weight: 700;
 }
 
+/* FORM STYLING */
+
 .form {
     width: 100%;
+    padding: 50px 50px 0;
 }
 
 .formHeader {
     color: var(--secondaryActive);
-    padding: 50px 50px 0;
+    /* padding: 50px 50px 0; */
     font-size: 2rem;
     margin: 0;
+    font-weight: 700;
+}
+
+.formFields {
+    font-family: inherit;
+    font-weight: 300;
+    letter-spacing: .15rem;
+}
+
+form {
+    display: flex;
+    gap: 200px;
+    margin-top: 20px;
+}
+
+.formColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formComponent {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    width: 300px;
+    height: 1.75rem;
+    border-radius: 4px;
+    border-width: thin;
+    font-size: 1rem;
+    font-family: inherit;
 }
 
 @media (max-width: 650px) {
