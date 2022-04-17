@@ -1,3 +1,122 @@
+/* Site Defaults and Setup */
 :root {
     font-family: 'Sora', sans-serif;
+    --mainColor: #596D48;
+    --secondaryColor: #4E3524;
+    --secondaryActive: #FA2108;
+    --grayMain: #A09EA0;
+    --white: white;
+    --lightGray: #E9E9E9;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+}
+
+/* STYLING FOR THE LOGO AND IMAGE CONTAINER */
+.imageContainer {
+    position: relative;
+    width: 40vw;
+}
+
+.mainImage {
+    height: 100vh;
+    width: 40vw;
+}
+
+.logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--white);
+}
+
+.logoText {
+    font-size: 4rem;
+}
+
+.credit {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    margin: 0px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.logoNumber {
+    color: var(--secondaryActive);
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: var(--secondaryActive);
+}
+
+/* STYLING FOR THE CONTENT CONTAINER */
+
+.firstSection {
+    background-color: var(--lightGray);
+    padding: 0 50px;
+    margin: 0px;
+    /* height: 35vh; */
+    width: 100%;
+}
+
+.firstSectionText {
+    padding-top: 225px;
+    padding-right: 100px;
+    line-height: 1.5;
+    padding-bottom: 35px;
+}
+
+.firstSectionText h2 {
+    font-weight: 300;
+    margin: 0px;
+    text-align: left;
+}
+
+.firstSectionImpact {
+    margin-top: 15px;
+}
+
+.firstSectionImpact h2 {
+    font-weight: 700;
+}
+
+.form {
+    width: 100%;
+}
+
+.formHeader {
+    color: var(--secondaryActive);
+    padding: 50px 50px 0;
+    font-size: 2rem;
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+    .logoText {
+        font-size: 2rem;
+    }
+
+    .firstSectionText h2 {
+        font-size: 1rem;
+    }
+
 }
