@@ -104,6 +104,7 @@ a:hover {
 .form {
     width: 100%;
     padding: 50px 50px 0;
+    margin-bottom: 50px;
 }
 
 .formHeader {
@@ -145,6 +146,36 @@ input {
     border-width: thin;
     font-size: 1rem;
     font-family: inherit;
+}
+
+/* STYLING FOR THE LAST SECTION */
+
+.background-submit {
+    background-color: var(--lightGray);
+    height: 502px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.submit {
+
+}
+
+button {
+    padding:15px 75px;
+    background-color: var(--secondaryActive);
+    color: white;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+
+.final-text {
+    color: black;
+    font-size: 1.25rem;
+}
+
+#final-text {
+    color: var(--secondaryActive);
 }
 
 @media (max-width: 650px) {
